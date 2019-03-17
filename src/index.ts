@@ -6,6 +6,8 @@ createConnection().then(async connection => {
 
     console.log("Inserting a new user into the database...");
     const user = new User();
+    user.username = "Admin";
+    user.password = "password";
     user.firstName = "Timber";
     user.lastName = "Saw";
     user.age = 25;
