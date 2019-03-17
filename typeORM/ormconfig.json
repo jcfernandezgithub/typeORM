@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "sql185.main-hosting.eu",
+   "port": 3306,
+   "username": "u100721010_jcdb",
+   "password": "08nov1991",
+   "database": "u100721010_mydb",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
